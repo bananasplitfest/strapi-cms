@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "activities",
+  "info": {
+    "name": "activity",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "public": {
+      "default": true,
+      "type": "boolean"
+    },
+    "description": {
+      "type": "text"
+    },
+    "schedule": {
+      "type": "json"
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "slug": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    }
+  }
+}
