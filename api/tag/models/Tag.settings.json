@@ -20,6 +20,10 @@
       "unique": true,
       "required": true,
       "type": "string"
+    },
+    "activities": {
+      "collection": "activity",
+      "via": "tags"
     }
   }
 }

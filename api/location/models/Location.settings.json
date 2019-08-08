@@ -7,7 +7,10 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
@@ -31,6 +34,11 @@
       "collection": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "sponsors": {
+      "collection": "sponsor",
+      "via": "locations",
+      "dominant": true
     }
   }
 }

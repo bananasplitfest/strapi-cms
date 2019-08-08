@@ -7,7 +7,10 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
@@ -33,6 +36,19 @@
       "unique": true,
       "required": true,
       "type": "string"
+    },
+    "location": {
+      "model": "location"
+    },
+    "sponsors": {
+      "collection": "sponsor",
+      "via": "activities",
+      "dominant": true
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "activities",
+      "dominant": true
     }
   }
 }
