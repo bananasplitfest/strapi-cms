@@ -50,7 +50,7 @@
     },
     "activities": {
       "collection": "activity",
-      "via": "sponsors"
+      "via": "sponsorsLogo"
     }
   }
 }

@@ -40,13 +40,18 @@
     "location": {
       "model": "location"
     },
-    "sponsors": {
+    "sponsorsName": {
       "collection": "sponsor",
       "via": "activities",
       "dominant": true
     },
     "tags": {
       "collection": "tag",
+      "via": "activities",
+      "dominant": true
+    },
+    "sponsorsLogo": {
+      "collection": "sponsor",
       "via": "activities",
       "dominant": true
     }
