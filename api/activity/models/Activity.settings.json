@@ -40,21 +40,6 @@
     "location": {
       "model": "location"
     },
-    "sponsorsName": {
-      "collection": "sponsor",
-      "via": "activities",
-      "dominant": true
-    },
-    "tags": {
-      "collection": "tag",
-      "via": "activities",
-      "dominant": true
-    },
-    "sponsorsLogo": {
-      "collection": "sponsor",
-      "via": "activities",
-      "dominant": true
-    },
     "website": {
       "type": "string"
     },
@@ -77,6 +62,30 @@
       "type": "string"
     },
     "soundcloud": {
+      "type": "string"
+    },
+    "sponsorsLogo": {
+      "collection": "sponsor",
+      "via": "activities",
+      "dominant": true
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "activities",
+      "dominant": true
+    },
+    "form": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "link": {
+      "type": "string"
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
       "type": "string"
     }
   }

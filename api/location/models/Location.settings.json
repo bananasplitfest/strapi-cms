@@ -37,8 +37,8 @@
     },
     "sponsors": {
       "collection": "sponsor",
-      "via": "locations",
-      "dominant": true
+      "dominant": true,
+      "via": "locations"
     }
   }
 }
